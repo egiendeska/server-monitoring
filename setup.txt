@@ -1,2 +1,13 @@
 chmod +x node_exporter.sh
 sudo ./node_exporter.sh
+
+
+//prometheus server
+sudo nano /etc/prometheus/prometheus.yml
+
+ - job_name: 'remote_nodes'
+    static_configs:
+      - targets: ['165.22.243.204:9100']
+
+
+sudo systemctl restart prometheus

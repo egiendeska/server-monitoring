@@ -1,0 +1,2 @@
+chmod +x node_exporter.sh
+sudo ./node_exporter.sh

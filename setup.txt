@@ -1,5 +1,6 @@
 chmod +x node_exporter.sh
 sudo ./node_exporter.sh
+sudo ufw allow 9100/tcp
 
 
 //prometheus server
